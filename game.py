@@ -1,8 +1,6 @@
 """A number-guessing game."""
 
 # Put your code here
-print('hi')
-
 player_name = input("Howdy, What's your name? ")
 print (player_name + ", I'm thinking of a number between 1 and 100")
 print("Try to guess my number.")
