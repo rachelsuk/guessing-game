@@ -11,7 +11,9 @@ number_of_attempts = 0
 
 while True:
     guess = int(input("Your guess? "))
-    if guess == random_integer:
+    if guess < 1 or guess > 100:
+        print("Error - make sure your guess is between 1 and 100.")
+    elif guess == random_integer:
         print(f'Well done {player_name}! You found my number in {number_of_attempts} tries!')
         break
     elif guess < random_integer:
